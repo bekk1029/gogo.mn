@@ -1,0 +1,2 @@
+# gogo.mn
+Baljinnyam
