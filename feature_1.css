@@ -1,0 +1,200 @@
+.feature-article {
+    display: flex;
+    flex-direction: column;
+    /* background: linear-gradient(90deg, #f4f4f4 7%, #ccc 17%); */
+    position: relative;
+    gap: 100px;
+
+}
+
+.head a {
+    color: #fff;
+}
+
+
+
+.feature-article__detail {
+    display: flex;
+}
+
+.feature-article__detail__text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 30px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #f4f4f4, #f9f9f9, #fff);
+
+}
+
+.feature-article__hover {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.feature-article__hover img {
+    border-radius: 5px;
+}
+
+.hover1:hover .feature-article__hover {
+    opacity: 0;
+}
+
+
+/* .feature-article__hover:hover {
+    opacity: 0;
+} */
+
+.hover1:hover .hover2 {
+    height: 100%;
+}
+
+/* .feature-article__hover:hover+.hover2 {
+    height: 100%;
+} */
+
+.hover2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    transition: 1s;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.hover2 img {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* .feature-article__hover:hover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    transition: all .9s ease-in-out;
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+.feature-article__hover img+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    opacity: 0;
+} */
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(129deg, #c40097, #d6710b);
+    background-image: linear-gradient(-120deg, #e08100, #c90027);
+    border-radius: 100px;
+    padding: 8px 15px;
+    border: none;
+    width: 100%;
+    max-width: 200px;
+
+}
+
+.feature-article__detail__text h2 {
+    padding-right: 50px;
+}
+
+
+.feature-article__detail__image {
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    height: fit-content;
+    flex-basis: 0;
+}
+
+.feature-article__detail__image img {
+    flex-grow: 1;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+
+
+.feature-article__detail__image:hover img {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+
+
+.feature-article__detail__image::before {
+    content: 'Дэлгэрэнгүй унших →';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0;
+    z-index: 2;
+    border-radius: 5px;
+
+}
+
+.feature-article__detail__image:hover::before {
+    opacity: 1;
+}
+
+
+.link>.share::before {
+    content: "\f064";
+    font-family: "FontAwesome", sans-serif;
+    font-size: 1rem;
+    color: #d4d2d2;
+}
+
+.link>.com::before {
+    content: "\f075";
+    font-family: "FontAwesome", sans-serif;
+    font-size: 1rem;
+    color: #d4d2d2;
+}
+
+/* .link>.share:hover>.link>.share::before {
+    transform: rotate(20deg);
+} */
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.link div {
+    border-radius: 30px;
+    padding: 5px 8px;
+    background: #e2e1e1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+}
