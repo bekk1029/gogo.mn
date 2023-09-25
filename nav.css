@@ -1,10 +1,11 @@
 header {
-    background: #fff;
+    background: #f0eeee;
 }
 
 .header {
     padding: 30px 0;
     display: flex;
+    gap: 20px;
     justify-content: space-between;
 
 }
@@ -12,6 +13,8 @@ header {
 .header-left {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 img {
@@ -25,8 +28,76 @@ img {
 
 .header-left-nav {
     display: flex;
+    gap: 40px;
 
 }
+
+.dropbtn {
+    /* background: #fff; */
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.has-child {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+
+
+
+.has-child:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-col {
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    margin-top: 30px;
+    gap: 50px;
+}
+
+.dropdown-col>.col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.dropdown-col>.col>li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    position: relative;
+    font-size: 1.1rem;
+
+}
+
+.dropdown-col>.col>li::before {
+    content: " ";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #108bf0;
+    position: absolute;
+    left: -16px;
+    top: 7px;
+}
+
+
+.has-child:hover .dropbtn {}
 
 .header-left-nav>li>a {
     padding: 0 20px;
@@ -41,21 +112,23 @@ img {
     opacity: .7;
 }
 
-.header-left-nav>li.live>a::before {
+.header-left-nav>li.live>.dropbtn::before {
     content: " ";
     width: 7px;
     height: 7px;
     border-radius: 50%;
     background-color: red;
     position: absolute;
-    left: 9px;
+    left: -5px;
     top: 7px;
 }
 
-.header-left-nav>li.has-child>a::after {
+.header-left-nav>li.has-child>.dropbtn::after {
     content: "\f078";
     font-family: "FontAwesome", sans-serif;
-    margin-left: 5px;
+    color: #333;
+    font-weight: 100;
+    margin-left: 8px;
 }
 
 .uk-text-right {
@@ -110,3 +183,5 @@ img {
 .header-right-item__value {
     text-align: right;
 }
+
+/*  */
