@@ -1,0 +1,40 @@
+.lifestyle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.slides {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.slides-c {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+
+}
+
+.slide {
+    border: 1px solid #333;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.slide div {
+    padding: 1px;
+
+}
+
+.slide img {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.links {
+    border-top: 1px solid #333;
+}

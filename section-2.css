@@ -48,14 +48,7 @@
     width: 100%;
 }
 
-/* .story::after {
-    content: "Жүдо, буудлагын тамирчид Азийн наадмын медалийн салхийг хагаллаа";
-    color: #fff;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    z-index: 100;
-} */
+
 
 .story::after {
     content: "\f099";
@@ -106,4 +99,124 @@
 
 .story:hover::before {
     opacity: 1;
+}
+
+
+/* today */
+
+.today_line {
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+}
+
+.row2_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex-grow: 2;
+    flex-basis: 0;
+}
+
+
+.news {
+    display: flex;
+    gap: 20px;
+}
+
+.zoom-img {
+    background: #00B0F4;
+    flex-grow: 1;
+    flex-basis: 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.zoom-img img {
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.news_ppr {
+    flex-grow: 2;
+    flex-basis: 0;
+}
+
+.row2_2 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    gap: 30px;
+    border-left: 1px solid #7e7b7b;
+    padding-left: 50px;
+}
+
+
+.row_card {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+
+}
+
+.link>.time::before {
+    content: "\f017";
+    font-family: "FontAwesome", sans-serif;
+    font-size: 1rem;
+    color: #d4d2d2;
+}
+
+.row_card .img {
+    width: 100%;
+    position: relative;
+    padding-top: 50%;
+    overflow: hidden;
+    height: fit-content;
+    flex-basis: 0;
+    border-radius: 8px;
+
+}
+
+
+
+.zoom-img:hover>img {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.zoom-img::before {
+    content: 'Унших →';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.img:hover::before {
+    opacity: 1;
+}
+
+.highlight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
