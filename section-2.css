@@ -30,7 +30,6 @@
 }
 
 .story {
-    border: 1px solid red;
     width: 100%;
     position: relative;
     padding-top: 140%;
@@ -43,9 +42,22 @@
     padding: 10px;
     position: absolute;
     bottom: 50px;
-    height: 30%;
+    height: 25%;
     color: #fff;
     width: 100%;
+    overflow: hidden;
+}
+
+.eyes {
+    background: transparent;
+    width: 10%;
+}
+
+.eyes::before {
+    content: "\f06e";
+    font-family: "FontAwesome", sans-serif;
+    color: #fff;
+    font-size: 1.3rem;
 }
 
 
@@ -72,10 +84,14 @@
     object-fit: cover;
 }
 
+.story:hover .story_text {
+    transform: translateY(-30px);
+}
+
 .story:hover>img {
     transform: scale(1.05);
     background: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
@@ -94,7 +110,7 @@
     font-size: 20px;
     opacity: 0;
     z-index: 2;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .story:hover::before {
@@ -178,12 +194,6 @@
 
 }
 
-.link>.time::before {
-    content: "\f017";
-    font-family: "FontAwesome", sans-serif;
-    font-size: 1rem;
-    color: #d4d2d2;
-}
 
 .row_card>.img {
     width: 100%;

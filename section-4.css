@@ -1,0 +1,48 @@
+.section-4 {
+    background-color: #1a1a1a;
+    padding: 50px 0px;
+}
+
+.play_btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-weight: 900;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.video {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.video_card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 550;
+    color: hsla(0, 0%, 100%, .8);
+}
+
+.video_card>.img {
+    width: 100%;
+    position: relative;
+    padding-top: 60%;
+    overflow: hidden;
+    height: fit-content;
+    flex-basis: 0;
+    border-radius: 8px;
+
+}
