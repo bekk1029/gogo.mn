@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./section-2.css">
     <link rel="stylesheet" href="./section-3.css">
     <link rel="stylesheet" href="./article.css">
+    <link rel="stylesheet" href="./footer.css">
     <title>GoGo Copy
     </title>
     <link rel="icon" href="https://mgl.gogo.mn/newsn/v4/images/favicon.bb471276.png" type="image/png" sizes="50x50">
@@ -68,7 +69,7 @@
                                 </div>
                             </li>
                             <li class="has-child">
-                                <button class="dropbtn">GoGOбулан</button>
+                                <button class="dropbtn" style="white-space: nowrap;">GoGO булан</button>
                                 <div class="dropdown-content">
                                     <div class="dropdown-col">
                                         <ul class="col">
@@ -101,7 +102,7 @@
                                 </div>
                             </li>
                             <li class="has-child">
-                                <button class="dropbtn">Хэвмаяг</button>
+                                <button class="dropbtn" style="white-space: nowrap;">Хэв маяг</button>
                                 <div class="dropdown-content">
                                     <div class="dropdown-col">
                                         <ul class="col col2">
@@ -134,7 +135,7 @@
 
                         <div class="header-right__item">
                             <div class="header-right-item">
-                                <div class="header-right-item__label">Цаг агаар</div>
+                                <div class="header-right-item__label" style="white-space: nowrap;">Цаг агаар</div>
                                 <div class="header-right-item-value">
                                     <img src="https://mgl.gogo.mn/newsn/v4/images/icon-cloud.e255a8cd.svg" width="20"
                                         alt="" />
@@ -145,7 +146,7 @@
                         <div class="header-right__item">
                             <div class="header-right-item">
                                 <div class="header-right-item__label">Зурхай</div>
-                                <div class="header-right-item-value">
+                                <div class="header-right-item-value" style="white-space: nowrap;">
                                     <img src="https://mgl.gogo.mn/newsn/v4/images/calendar-icon.ff84145b.svg" width="20"
                                         alt="" />
                                     <span><b>10.14</b></span>
@@ -154,7 +155,7 @@
                         </div>
                         <div class="header-right__item">
                             <div class="header-right-item">
-                                <div class="header-right-item__label">Валютын ханш</div>
+                                <div class="header-right-item__label" style="white-space: nowrap;">Валютын ханш</div>
                                 <div class="header-right-item-value">
                                     <span class="dollar">$</span>
                                     <span><b>3367₮</b></span>
@@ -207,16 +208,20 @@
                 </div>
 
             </div>
+
             <div class="cards">
                 <div class="card">
                     <div class="img">
                         <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/311064-23092023-1695453415-980527909-1.jpeg"
                             alt="">
                     </div>
-                    <h2>ТОЙМ: Шатахууны хоригийн талаарх ОХУ-ын мэдэгдэл ба Монголын болгоомжлол</h2>
-                    <div class="link">
-                        <div class="share">55</div>
-                        <div class="com">2</div>
+
+                    <div>
+                        ТОЙМ: Шатахууны хоригийн талаарх ОХУ-ын мэдэгдэл ба Монголын болгоомжлол
+                    </div>
+                    <div class="slide_btn">
+                        <div class="share_a">55</div>
+                        <div class="com_a">2</div>
                     </div>
                 </div>
                 <div class="card">
@@ -224,23 +229,34 @@
                         <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/310825-20092023-1695177558-904190336-unetei.jpg"
                             alt="">
                     </div>
-                    <h2>Үнэтэй олдсон миний сургамж</h2>
-                    <div class="link">
-                        <div class="share">55</div>
-                        <div class="com">2</div>
+
+                    <div>
+                        Үнэтэй олдсон миний сургамж
+                    </div>
+                    <div class="slide_btn">
+                        <div class="share_a">55</div>
+                        <div class="com_a">2</div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="img">
                         <img src="https://mgl.gogo.mn/newsn/images/ck/2023/09/22/1-160530-541227837.jpeg" alt="">
                     </div>
-                    <h2>Хавар олдсон хоёр бамбаруушийг байгаль хамгаалагчид тэжээхээр болжээ</h2>
-                    <div class="link">
-                        <div class="share">55</div>
-                        <div class="com">2</div>
+
+                    <div>
+                        Хавар олдсон хоёр бамбаруушийг байгаль хамгаалагчид тэжээхээр болжээ
+                    </div>
+                    <div class="slide_btn">
+                        <div class="share_a">55</div>
+                        <div class="com_a">2</div>
                     </div>
                 </div>
-
+                <div class="card">
+                    <div class="card_img">
+                        <img src="https://mgl.gogo.mn/banner_gogo/banner/2023/09/18/news-b2/videourl/1695003686/MicrosoftTeams-image%20(24).png"
+                            alt="">
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -304,131 +320,151 @@
             <div class="today_line">
                 <div class="row2_1">
                     <div class="news">
-                        <div class="zoom-img">
-                            <img
-                                src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/-25092023-1695636190-641310786-651138b51431cf7f0c8d8ace.jpg">
+                        <div class="zoom">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/-25092023-1695636190-641310786-651138b51431cf7f0c8d8ace.jpg"
+                                alt="">
                         </div>
                         <div class="news_ppr">
-                            <h2>“Amazon”-ийг дуурайсан “TikTok”-ийн цахим дэлгүүрт хямд үнэтэй хятад бараа зонхилж байна
-                            </h2>
-                            <p>“TikTok Shop” энэ онд 20 тэрбум ам.долларын бараа, бүтээгдэхүүн борлуулна гэсэн
-                                зорилттойгоор “Amazon.com”-той өрсөлдөх гэж буйг "Bloomberg“ мэдээлж байв.
-                            </p>
-                            <div class="link">
-                                <div class="share">55</div>
-                                <div class="com">2</div>
+                            <div>
+                                <h2>“Amazon”-ийг дуурайсан “TikTok”-ийн цахим дэлгүүрт хямд үнэтэй хятад бараа зонхилж
+                                    байна
+                                </h2>
+                                <p>“TikTok Shop” энэ онд 20 тэрбум ам.долларын бараа, бүтээгдэхүүн борлуулна гэсэн
+                                    зорилттойгоор “Amazon.com”-той өрсөлдөх гэж буйг "Bloomberg“ мэдээлж байв.
+                                </p>
+                            </div>
+                            <div class="slide_btn">
+                                <div class="share_a">55</div>
+                                <div class="com_a">2</div>
                             </div>
 
                         </div>
                     </div>
                     <div class="news">
-                        <div class="zoom-img">
-                            <img
-                                src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/-25092023-1695636190-641310786-651138b51431cf7f0c8d8ace.jpg">
+                        <div class="zoom">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/311067-23092023-1695459958-1039099713-meddeg_medeeldeg_baiy_avtomashingui_(12).jpg"
+                                alt="">
                         </div>
                         <div class="news_ppr">
-                            <h2>“Amazon”-ийг дуурайсан “TikTok”-ийн цахим дэлгүүрт хямд үнэтэй хятад бараа зонхилж байна
-                            </h2>
-                            <p>“TikTok Shop” энэ онд 20 тэрбум ам.долларын бараа, бүтээгдэхүүн борлуулна гэсэн
-                                зорилттойгоор “Amazon.com”-той өрсөлдөх гэж буйг "Bloomberg“ мэдээлж байв.
-                            </p>
-                            <div class="link">
-                                <div class="share">55</div>
-                                <div class="com">2</div>
+                            <div>
+                                <h2>ФОТО: Автомашингүй өдөр
+                                </h2>
+                                <p>“Хүн худалдаалах гэмт хэрэгт хүүхэд өртөхөөс урьдчилан сэргийлэх, соён гэгээрүүлэх,
+                                    олон нийтийн мэдлэг ойлголтыг нэмэгдүүлэх зорилготой “Мэддэг, мэдээлдэг байя” сарын
+                                    аян үргэлжилж байна.
+                                </p>
+                            </div>
+                            <div class="slide_btn">
+                                <div class="share_a">55</div>
+                                <div class="com_a">2</div>
                             </div>
 
                         </div>
                     </div>
                     <div class="news">
-                        <div class="zoom-img">
-                            <img
-                                src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/-25092023-1695636190-641310786-651138b51431cf7f0c8d8ace.jpg">
+                        <div class="zoom">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/310825-20092023-1695177558-904190336-unetei.jpg"
+                                alt="">
                         </div>
                         <div class="news_ppr">
-                            <h2>“Amazon”-ийг дуурайсан “TikTok”-ийн цахим дэлгүүрт хямд үнэтэй хятад бараа зонхилж байна
-                            </h2>
-                            <p>“TikTok Shop” энэ онд 20 тэрбум ам.долларын бараа, бүтээгдэхүүн борлуулна гэсэн
-                                зорилттойгоор “Amazon.com”-той өрсөлдөх гэж буйг "Bloomberg“ мэдээлж байв.
-                            </p>
-                            <div class="link">
-                                <div class="share">55</div>
-                                <div class="com">2</div>
+                            <div>
+                                <h2>Үнэтэй олдсон миний сургамж
+                                </h2>
+                                <p>Ер нь би хаана алдсан билээ гээд эргээд бодоход тэр бүжиглэдэг охидтой гадуур хамт
+                                    гарсан орой, тэдний тансаг хэрэглээг “ямар гоё юм бэ” гэж бодсон сэтгэл хөдлөл л
+                                    байж. Яасан ч ахархан бодлоор өчүүхэн зүйлд сэтгэл татагдсан юм бэ дээ, зайлуул.
+                                </p>
+                            </div>
+                            <div class="slide_btn">
+                                <div class="share_a">55</div>
+                                <div class="com_a">2</div>
                             </div>
 
                         </div>
                     </div>
                     <div class="news">
-                        <div class="zoom-img">
-                            <img
-                                src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/-25092023-1695636190-641310786-651138b51431cf7f0c8d8ace.jpg">
+                        <div class="zoom">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/-22092023-1695363502-891549886-1.jpg"
+                                alt="">
                         </div>
                         <div class="news_ppr">
-                            <h2>“Amazon”-ийг дуурайсан “TikTok”-ийн цахим дэлгүүрт хямд үнэтэй хятад бараа зонхилж байна
-                            </h2>
-                            <p>“TikTok Shop” энэ онд 20 тэрбум ам.долларын бараа, бүтээгдэхүүн борлуулна гэсэн
-                                зорилттойгоор “Amazon.com”-той өрсөлдөх гэж буйг "Bloomberg“ мэдээлж байв.
-                            </p>
-                            <div class="link">
-                                <div class="share">55</div>
-                                <div class="com">2</div>
+                            <div>
+                                <h2>Унасан навчис хөрсөнд бордоо болдог
+                                </h2>
+                                <p>Навчис шарлан унаж, хөлд хөглөрөн шаржигнах намар оройн цаг айсуй. Газарт унасан
+                                    навчсыг хог гэж шүүрдэн хаях, хамж шатаахыг бүү яар. Түүж аваад муудаж доройтсон
+                                    хөрстэй газарт дэвсээрэй. Тарьсан модныхоо нүхэнд хийгээрэй.
+                                </p>
+                            </div>
+                            <div class="slide_btn">
+                                <div class="share_a">55</div>
+                                <div class="com_a">2</div>
                             </div>
 
                         </div>
                     </div>
                     <div class="news">
-                        <div class="zoom-img">
-                            <img
-                                src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/-25092023-1695636190-641310786-651138b51431cf7f0c8d8ace.jpg">
+                        <div class="zoom">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/311062-23092023-1695447163-1703538866-1.jpg"
+                                alt="">
                         </div>
                         <div class="news_ppr">
-                            <h2>“Amazon”-ийг дуурайсан “TikTok”-ийн цахим дэлгүүрт хямд үнэтэй хятад бараа зонхилж байна
-                            </h2>
-                            <p>“TikTok Shop” энэ онд 20 тэрбум ам.долларын бараа, бүтээгдэхүүн борлуулна гэсэн
-                                зорилттойгоор “Amazon.com”-той өрсөлдөх гэж буйг "Bloomberg“ мэдээлж байв.
-                            </p>
-                            <div class="link">
-                                <div class="share">55</div>
-                                <div class="com">2</div>
+                            <div>
+                                <h2>Chevron: Газрын тосны үнэ баррель нь $100 хүрвэл стагфляц үүсэх өндөр эрсдэлтэй
+                                </h2>
+                                <p>“Goldman Sachs Group” брент төрлийн газрын тосны үнэ баррель нь 100 ам.доллар хүрнэ
+                                    гэж үзэж байгаа олон улсын байгууллагуудын тоог нэгээр нэмлээ. OPEC-ийн Өргөтгөсөн
+                                    бүлэг нийлүүлэлтээ танаж, эрэлт дэлхий дахинд нэмэгдсэнээр газрын тосны үнэ гурван
+                                    оронтой тоонд хүрнэ гэж “Goldman Sachs” төсөөллөө нэмэгдүүлээд байна
+                            </div>
+                            <div class="slide_btn">
+                                <div class="share_a">55</div>
+                                <div class="com_a">2</div>
                             </div>
 
                         </div>
                     </div>
                     <div class="news">
-                        <div class="zoom-img">
-                            <img
-                                src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/-25092023-1695636190-641310786-651138b51431cf7f0c8d8ace.jpg">
+                        <div class="zoom">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/311111-25092023-1695632711-1858364272-EDF_6061-1691242790-1691242790.jpg"
+                                alt="">
                         </div>
                         <div class="news_ppr">
-                            <h2>“Amazon”-ийг дуурайсан “TikTok”-ийн цахим дэлгүүрт хямд үнэтэй хятад бараа зонхилж байна
-                            </h2>
-                            <p>“TikTok Shop” энэ онд 20 тэрбум ам.долларын бараа, бүтээгдэхүүн борлуулна гэсэн
-                                зорилттойгоор “Amazon.com”-той өрсөлдөх гэж буйг "Bloomberg“ мэдээлж байв.
-                            </p>
-                            <div class="link">
-                                <div class="share">55</div>
-                                <div class="com">2</div>
+                            <div>
+                                <h2>Ц.Цогтбаатар Азийн наадмаас хүрэл медаль хүртлээ
+                                </h2>
+                                <p>19 дэх удаагийн Азийн наадам үргэлжилж байна
+                                    Есдүгээр сарын 25-д жүдо бөхийн төрөлд Ц.Цогтбаатар хүрэл медаль хүртлээ
+
+                                </p>
+                            </div>
+                            <div class="slide_btn">
+                                <div class="share_a">55</div>
+                                <div class="com_a">2</div>
                             </div>
 
                         </div>
                     </div>
                     <div class="news">
-                        <div class="zoom-img">
-                            <img
-                                src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/-25092023-1695636190-641310786-651138b51431cf7f0c8d8ace.jpg">
+                        <div class="zoom">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/-26092023-1695694591-31884053-medeenii_nuur_3.0_1.jpg"
+                                alt="">
                         </div>
                         <div class="news_ppr">
-                            <h2>“Amazon”-ийг дуурайсан “TikTok”-ийн цахим дэлгүүрт хямд үнэтэй хятад бараа зонхилж байна
-                            </h2>
-                            <p>“TikTok Shop” энэ онд 20 тэрбум ам.долларын бараа, бүтээгдэхүүн борлуулна гэсэн
-                                зорилттойгоор “Amazon.com”-той өрсөлдөх гэж буйг "Bloomberg“ мэдээлж байв.
-                            </p>
-                            <div class="link">
-                                <div class="share">55</div>
-                                <div class="com">2</div>
+                            <div>
+                                <h2>SocialPay 3.0 хувилбар хэрэглээнд бүрэн нэвтэрлээ
+                                </h2>
+                                <p>Голомт банк харилцагч төвтэй, хүртээмжтэй үйлчилгээг үзүүлэх зорилтынхоо хүрээнд
+                                    дижитал бүтээгдэхүүн үйлчилгээгээ хөгжүүлэхэд онцгой анхаарч ажилласаар ирсэн.
+                            </div>
+                            <div class="slide_btn">
+                                <div class="share_a">55</div>
+                                <div class="com_a">2</div>
                             </div>
 
                         </div>
                     </div>
+
                 </div>
                 <div class="row2_2">
                     <div class="highlight">
@@ -441,9 +477,9 @@
                                 alt="">
                         </div>
                         <h4>Ноолууран цамцны улирал ирлээ</h4>
-                        <div class="link">
-                            <div class="share">55</div>
-                            <div class="com">2</div>
+                        <div class="slide_btn">
+                            <div class="share_a">55</div>
+                            <div class="com_a">2</div>
                             <div class="time">5 цагийн өмнө</div>
                         </div>
                     </div>
@@ -546,48 +582,59 @@
                 </div>
                 <div class="slides">
                     <div class="slide">
-                        <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg"
-                            alt="">
+                        <div class="slide_img">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg"
+                                alt="">
+                        </div>
+
                         <div>
                             Миний санал болгох ном: <br>
                             "Мэлхий"
                         </div>
-                        <div class="link links">
-                            <div class="share">55</div>
-                            <div class="com">2</div>
+                        <div class="slide_btn">
+                            <div class="share_a">55</div>
+                            <div class="com_a">2</div>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg"
-                            alt="">
-                        <div>
-                            Миний санал болгох ном: "Мэлхий"
+                        <div class="slide_img">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2020/04/253533-03042020-1585902739-579747585-Untitled-1.jpg"
+                                alt="">
                         </div>
-                        <div class="link">
-                            <div class="share">55</div>
-                            <div class="com">2</div>
+
+                        <div>
+                            Хоолны жор: Дархлаа <br>дэмжих цагаан гаа, лимонтой цай
+                        </div>
+                        <div class="slide_btn">
+                            <div class="share_a">55</div>
+                            <div class="com_a">2</div>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg"
-                            alt="">
-                        <div>
-                            Миний санал болгох ном: "Мэлхий"
+                        <div class="slide_img">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2020/04/254608-24042020-1587712527-2143033462-spaghetti-and-meatballs-56109647-5845fee25f9b5851e5cc6a41.jpg"
+                                alt="">
                         </div>
-                        <div class="link">
-                            <div class="share">55</div>
-                            <div class="com">2</div>
+
+                        <div>
+                            Хоолны жор: Бөөрөнхий <br> махтай шпагетти
+                        </div>
+                        <div class="slide_btn">
+                            <div class="share_a">55</div>
+                            <div class="com_a">2</div>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg"
-                            alt="">
-                        <div>
-                            Миний санал болгох ном: "Мэлхий"
+                        <div class="slide_img">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2020/12/265740-15122020-1608019172-631762625-g11.jpg"
+                                alt="">
                         </div>
-                        <div class="link">
-                            <div class="share">55</div>
-                            <div class="com">2</div>
+                        <div>
+                            Улаагчны хар нуур
+                        </div>
+                        <div class="slide_btn">
+                            <div class="share_a">55</div>
+                            <div class="com_a">2</div>
                         </div>
                     </div>
                 </div>
@@ -595,53 +642,66 @@
             </article>
             <article class="technology slider">
                 <div class="highlight">
-                    <img src="https://mgl.gogo.mn//newsn/v4/images/interview.b47c0f6b.png" alt="">
-                    <h2>Ярилцлага</h2>
+                    <img src="https://mgl.gogo.mn/newsn/v4/images/tech.a4b28dbb.png" alt="">
+                    <h2>Технологи</h2>
                 </div>
                 <div class="slides">
                     <div class="slide">
-                        <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg"
-                            alt="">
-                        <div>
-                            Миний санал болгох ном: <br>
-                            "Мэлхий"
+                        <div class="slide_img">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/-25092023-1695636190-641310786-651138b51431cf7f0c8d8ace.jpg"
+                                alt="">
                         </div>
-                        <div class="link links">
-                            <div class="share">55</div>
-                            <div class="com">2</div>
+
+                        <div>
+                            “Amazon”-ийг дуурайсан <br> “TikTok”-ийн цахим дэлгүүрт <br> хямд үнэтэй хятад бараа <br>
+                            зонхилж байна
+                        </div>
+                        <div class="slide_btn">
+                            <div class="share_a">55</div>
+                            <div class="com_a">2</div>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg"
-                            alt="">
-                        <div>
-                            Миний санал болгох ном: "Мэлхий"
+                        <div class="slide_img">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/311113-25092023-1695634494-655102327-651138b51431cf7f0c8d8ace.jpg"
+                                alt="">
                         </div>
-                        <div class="link">
-                            <div class="share">55</div>
-                            <div class="com">2</div>
+
+                        <div>
+                            “Apple” ирэх таван жилд <br> БНЭУ-д үйлдвэрлэлээ тав <br> дахин тэлнэ
+                        </div>
+                        <div class="slide_btn">
+                            <div class="share_a">55</div>
+                            <div class="com_a">2</div>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg"
-                            alt="">
-                        <div>
-                            Миний санал болгох ном: "Мэлхий"
+                        <div class="slide_img">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/311052-22092023-1695381851-1895351322-8be812d4-396a-4499-b70b-675afed11820.jpg"
+                                alt="">
                         </div>
-                        <div class="link">
-                            <div class="share">55</div>
-                            <div class="com">2</div>
+
+                        <div>
+                            БНХАУ дахь “iPhone”-ийн <br> хоригийг үл харгалзан <br> худалдан авагчид “Apple”-ийн
+                        </div>
+                        <div class="slide_btn">
+                            <div class="share_a">55</div>
+                            <div class="com_a">2</div>
                         </div>
                     </div>
                     <div class="slide">
-                        <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg"
-                            alt="">
-                        <div>
-                            Миний санал болгох ном: "Мэлхий"
+                        <div class="slide_img">
+                            <img src="https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2023/09/310952-20092023-1695199024-1752431908-650a695c1431cf7f0c8d8a4d.jpg"
+                                alt="">
                         </div>
-                        <div class="link">
-                            <div class="share">55</div>
-                            <div class="com">2</div>
+                        <div>
+                            Илон Маскийн тархины <br> суулгацын стартап эмнэл <br> зүйн туршилтад орох анхны <br>
+                            оролцогчдоо
+                            бүртгэнэ
+                        </div>
+                        <div class="slide_btn">
+                            <div class="share_a">55</div>
+                            <div class="com_a">2</div>
                         </div>
                     </div>
                 </div>
@@ -649,31 +709,39 @@
             </article>
             <article class="comic slider">
                 <div class="highlight">
-                    <img src="https://mgl.gogo.mn//newsn/v4/images/interview.b47c0f6b.png" alt="">
-                    <h2>Ярилцлага</h2>
+                    <img src="https://mgl.gogo.mn//newsn/v4/images/comic.9afb6d5b.png" alt="">
+                    <h2>Комик</h2>
                 </div>
                 <div class="slides-c">
-                    <div class="slide">
-                        <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg"
-                            alt="">
-                        <div>
-                            Миний санал болгох ном: <br>
-                            "Мэлхий"
+                    <div class="slide-b">
+                        <div class="slide_img last_img">
+                            <img src="https://mgl.gogo.mn/newsn/comic/2023/06/21/3773/comic-153411-688093610.jpeg"
+                                alt="">
                         </div>
-                        <div class="link links">
-                            <div class="share">55</div>
-                            <div class="com">2</div>
+
+                        <div class="slide-r">
+                            <div>
+                                Нэг өрөөнд хамт хэвтсэн энэ хэцүү хүний ДАТА ДУУСААСАЙ
+                            </div>
+                            <div class="slide_btn">
+                                <div class="share_a">55</div>
+                                <div class="com_a">2</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="slide">
-                        <img src="https://mgl.gogo.mn/newsn/thumbnail/510/images/c/2023/09/310760-18092023-1695002878-982692408-minii_sanal_bolgoh_nom.jpg"
-                            alt="">
-                        <div>
-                            Миний санал болгох ном: "Мэлхий"
+                    <div class="slide-b">
+                        <div class="slide_img last_img">
+                            <img src="https://mgl.gogo.mn/newsn/comic/2023/05/03/3772/hugjliin_bank-184555-1805228234.jpeg"
+                                alt="">
                         </div>
-                        <div class="link">
-                            <div class="share">55</div>
-                            <div class="com">2</div>
+                        <div class="slide-r">
+                            <div>
+                                Хөгжлийн банкны шүүгдэгчдийн хөөрхийлөлтэй мэдүүлгүүд
+                            </div>
+                            <div class="slide_btn">
+                                <div class="share_a">55</div>
+                                <div class="com_a">2</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -711,13 +779,27 @@
                             <a href="">Нууцлалын бодлого</a>
                         </li>
                         <li>
-                            <img src="" alt="">
+                            <img src="https://mgl.gogo.mn/newsn/v4/images/holboo.99f66db8.png" alt="">
                             <a href="">Холбоо барих</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="last_footer"></div>
+            <hr>
+            <div class="last_footer">
+                <div class="footer_text">
+                    © 2007 - 2023 Монгол Контент ХХК • Бүх эрх хуулиар хамгаалагдсан
+                </div>
+                <div class="footer_socail">
+                    <a href="">
+                        <img src="./Frame (1).png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./Frame.png" alt="">
+                    </a>
+
+                </div>
+            </div>
         </div>
     </footer>
 </body>

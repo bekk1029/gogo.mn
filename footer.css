@@ -1,0 +1,42 @@
+.first_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+    padding: 50px 0px;
+}
+
+.footer_nav ul {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer_nav ul li {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 10px;
+}
+
+.footer_nav ul li>img {
+    display: block;
+    width: 15px;
+    height: 20px;
+}
+
+.last_footer {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+.footer_socail a img {
+    color: #464242;
+    width: 20px;
+    height: 20px;
+}

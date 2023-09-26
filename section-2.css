@@ -121,29 +121,40 @@
 
 .news {
     display: flex;
+    flex-direction: row;
     gap: 20px;
 }
 
-.zoom-img {
+
+.zoom {
+    position: relative;
     background: #00B0F4;
     flex-grow: 1;
     flex-basis: 0;
-    border-radius: 5px;
     width: 100%;
-    height: 100%;
+    padding-top: 35%;
+    overflow: hidden;
+    height: fit-content;
+    flex-basis: 0;
+    border-radius: 8px;
 
 }
 
-.zoom-img img {
-    border-radius: 8px;
-    display: block;
+.zoom img {
+    position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    display: block;
     object-fit: cover;
-    position: relative;
+    transition: all .2s ease-in-out;
 }
 
 .news_ppr {
+    display: flex;
+    flex-direction: column;
     flex-grow: 2;
     flex-basis: 0;
 }
@@ -174,7 +185,7 @@
     color: #d4d2d2;
 }
 
-.row_card .img {
+.row_card>.img {
     width: 100%;
     position: relative;
     padding-top: 50%;
@@ -187,15 +198,16 @@
 
 
 
-.zoom-img:hover>img {
+.zoom:hover>img {
     transform: scale(1.05);
     background: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
 
-.zoom-img::before {
+.zoom::before {
     content: 'Унших →';
     position: absolute;
+    width: 100%;
     top: 0;
     right: 0;
     left: 0;
@@ -211,7 +223,7 @@
     border-radius: 5px;
 }
 
-.img:hover::before {
+.zoom:hover::before {
     opacity: 1;
 }
 
