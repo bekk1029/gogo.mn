@@ -32,32 +32,56 @@
 .story {
     width: 100%;
     position: relative;
-    padding-top: 140%;
+    padding-top: 180%;
     overflow: hidden;
     height: fit-content;
     flex-basis: 0;
+    border-radius: 5px;
+}
+
+.story:hover .s_text {
+    height: 100%;
 }
 
 .story_text {
-    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     position: absolute;
-    bottom: 50px;
-    height: 25%;
+    bottom: 0;
     color: #fff;
     width: 100%;
+}
+
+.s_text {
+    height: 50px;
     overflow: hidden;
+    transition-duration: .9s;
+    transition-property: margin-bottom;
+}
+
+.s_text div {
+    transition-duration: .2s;
+    transition-property: margin-bottom;
 }
 
 .eyes {
+    position: relative;
+    height: 30px;
+    width: 100%;
     background: transparent;
-    width: 10%;
+    z-index: 10;
 }
 
-.eyes::before {
-    content: "\f06e";
+.eye::before {
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+    content: "\f06e 177";
     font-family: "FontAwesome", sans-serif;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: .9rem;
+    display: flex;
+    gap: 3px;
 }
 
 
@@ -73,20 +97,22 @@
 }
 
 
+
+
 .story img {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    border-radius: 8px;
     display: block;
     object-fit: cover;
+    transition: .3s ease-in-out;
 }
 
-.story:hover .story_text {
+/* .story:hover .story_text {
     transform: translateY(-30px);
-}
+} */
 
 .story:hover>img {
     transform: scale(1.05);
@@ -123,7 +149,7 @@
 .today_line {
     margin-top: 100px;
     display: flex;
-    gap: 50px;
+    gap: 20px;
 }
 
 .row2_1 {
@@ -139,6 +165,7 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
+    padding-right: 50px;
 }
 
 
@@ -148,7 +175,7 @@
     flex-grow: 1;
     flex-basis: 0;
     width: 100%;
-    padding-top: 35%;
+    padding-top: 25%;
     overflow: hidden;
     height: fit-content;
     flex-basis: 0;
@@ -181,8 +208,11 @@
     flex-grow: 1;
     flex-basis: 0;
     gap: 30px;
-    border-left: 1px solid #7e7b7b;
-    padding-left: 50px;
+    border-left: 1px solid #dad6d6;
+}
+
+.row_to_col1 {
+    padding-left: 60px;
 }
 
 
@@ -205,6 +235,50 @@
     border-radius: 8px;
 
 }
+
+.row_to_col2 {
+    color: #000;
+    background: rgba(192, 223, 255, .5411764705882353);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.trends {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    border-bottom: .9px dashed #b1acac;
+    padding-bottom: 10px;
+    transition: .3s ease-in-out;
+}
+
+.trends:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.trends:hover .trend {
+    opacity: 0.7;
+}
+
+.trends h1 {
+    color: #c25858;
+    font-size: 3rem;
+    line-height: 100%;
+}
+
+.trend {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    color: #000;
+
+}
+
 
 
 
@@ -241,4 +315,189 @@
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.news_img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.images,
+.main_images {
+    display: flex;
+    width: 100%;
+}
+
+
+
+.main_images img {
+    height: 200px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+
+.images img {
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+
+.images input {
+    display: none;
+}
+
+.main_images input {
+    display: none;
+}
+
+
+.dott {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dott label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+
+}
+
+.dott label:hover:active {
+    background: #4060cb;
+}
+
+#img3:checked~.m1 {
+    margin-left: 0;
+}
+
+#img4:checked~ {
+    display: block;
+}
+
+.images:has(#img4:checked) {
+    transform: translate(-100%);
+}
+
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.dots label:hover {
+    background: #fff;
+}
+
+#img1:checked~.m1 {
+    margin-left: 0;
+}
+
+#img2:checked~ {
+    display: block;
+}
+
+.images:has(#img2:checked) {
+    transform: translate(-100%);
+}
+
+.day_btn {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.date_btn {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) 20px;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.date:hover .date_t {
+    color: #407ce8;
+}
+
+.date:hover button {
+    background-color: #407ce8;
+}
+
+.daylight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #407ce8;
+
+}
+
+.daylight h2 {
+    font-size: 1.1rem;
+
+}
+
+.daylight img {
+    width: 30px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: 8px;
+    color: #cac4c4;
+    cursor: pointer;
+
+
+}
+
+.date button {
+    width: 100%;
+    height: 7px;
+    background-color: #efefef;
+    border-radius: 20px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    border: none;
+
+}
+
+.date>.click_date_btn {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #efefef;
+}
+
+.date>.click_date_btn:hover {
+    color: #fff;
+    background: #407ce8;
 }

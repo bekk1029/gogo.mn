@@ -11,6 +11,17 @@
     font-weight: 900;
     padding: 5px;
     padding-bottom: 20px;
+
+}
+
+.play_btn div {
+    transition: .3s ease-in-out;
+}
+
+.play_btn:hover div {
+    color: #276fe4;
+    cursor: pointer;
+
 }
 
 

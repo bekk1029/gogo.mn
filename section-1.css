@@ -231,14 +231,13 @@ main {
 
 }
 
-.card>.card_img {
-    display: block;
+.cards .news_img {
     width: 100%;
     position: relative;
     padding-top: 110%;
 }
 
-.card_img img {
+.news_img img {
     position: absolute;
     width: 100%;
     height: 100%;
