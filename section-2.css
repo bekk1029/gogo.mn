@@ -320,22 +320,18 @@
 .news_img {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    padding-bottom: 400px;
 }
 
 
-.images,
-.main_images {
+.images {
     display: flex;
     width: 100%;
 }
 
-
-
-.main_images img {
-    height: 200px;
-    width: 100%;
-    transition: all 0.15s ease;
+#kk {
+    display: block;
+    border: 2px solid #c25858;
 }
 
 .images img {
@@ -348,19 +344,7 @@
     display: none;
 }
 
-.main_images input {
-    display: none;
-}
 
-
-.dott {
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-    display: flex;
-    justify-content: center;
-    margin: 5px;
-}
 
 .dots {
     position: absolute;
@@ -369,33 +353,6 @@
     display: flex;
     justify-content: center;
     margin: 5px;
-}
-
-.dott label {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: solid #fff 3px;
-    cursor: pointer;
-    transition: all 0.15s ease;
-    margin: 5px;
-
-}
-
-.dott label:hover:active {
-    background: #4060cb;
-}
-
-#img3:checked~.m1 {
-    margin-left: 0;
-}
-
-#img4:checked~ {
-    display: block;
-}
-
-.images:has(#img4:checked) {
-    transform: translate(-100%);
 }
 
 .dots label {
@@ -412,16 +369,16 @@
     background: #fff;
 }
 
-#img1:checked~.m1 {
-    margin-left: 0;
+#img1:checked~#kk {
+    display: block;
 }
 
-#img2:checked~ {
+#img2:checked~#kk2 {
     display: block;
 }
 
 .images:has(#img2:checked) {
-    transform: translate(-100%);
+    transform: translate(100%);
 }
 
 .day_btn {
@@ -437,9 +394,15 @@
     gap: 20px;
     flex-grow: 1;
     flex-basis: 0;
+
 }
 
 .date:hover .date_t {
+    color: #407ce8;
+}
+
+.date:hover,
+.date.date:active {
     color: #407ce8;
 }
 
@@ -451,12 +414,12 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #407ce8;
 
 }
 
 .daylight h2 {
     font-size: 1.1rem;
+    color: #cac4c4;
 
 }
 
@@ -468,12 +431,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     grid-area: 8px;
     color: #cac4c4;
     cursor: pointer;
+    position: relative;
 
 
 }
+
+.date_btn>div {
+    position: relative;
+}
+
+#btn {
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    width: 100px;
+    height: 65px;
+    z-index: 1;
+    opacity: 0;
+}
+
+#btn:checked+.date button {
+    background-color: #407ce8;
+}
+
+#btn:checked+.date {
+    color: #407ce8;
+}
+
+
 
 .date button {
     width: 100%;
@@ -497,7 +486,33 @@
     background-color: #efefef;
 }
 
-.date>.click_date_btn:hover {
+.date:hover .click_date_btn {
     color: #fff;
     background: #407ce8;
+}
+
+#scales {
+    position: absolute;
+    top: 3px;
+    left: -1px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.date_time {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    background: #00B0F4;
+    color: #fff;
+    padding: 30px;
+    display: none;
+}
+
+#scales:checked~.date_time {
+    display: block;
 }
