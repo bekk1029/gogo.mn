@@ -1,3 +1,9 @@
+:root {
+    --hover-color: #407ce8;
+    --scale-color: rgba(0, 0, 0, 0.3);
+    --before-after-color: rgba(0, 0, 0, 0.1);
+}
+
 header {
     background: #f0eeee;
 }
@@ -30,6 +36,10 @@ img {
     display: flex;
     gap: 40px;
 
+}
+
+.hamburger {
+    display: none;
 }
 
 .dropbtn {
@@ -184,4 +194,126 @@ img {
     text-align: right;
 }
 
-/*  */
+@media only screen and (max-width: 992px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: flex-start !important;
+        align-items: center;
+        padding: 5px 0;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    .header-left__logo {
+        width: 80px;
+        margin-right: 10px;
+    }
+
+    .header ul {
+        display: none;
+    }
+
+    .header-right {
+        gap: 5px;
+    }
+
+    .header-right__item {
+        margin-right: 3px;
+        border: 1px solid #888;
+        border-radius: 5px;
+        padding: 1px;
+
+    }
+
+    .main_mobile {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid green;
+        width: 100%;
+        position: relative;
+    }
+
+    .main_mobile img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-size: cover;
+
+    }
+
+    .mobile-text {
+        position: absolute;
+        bottom: 50px;
+        padding: 30px;
+    }
+
+    .mobile-btn {
+        width: 100%;
+        height: 8px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+    }
+
+    .m-btn {
+        border-radius: 1px;
+        background: var(--hover-color);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .feature-article {
+        display: none !important;
+    }
+
+    .cards {
+        display: none !important;
+    }
+
+    .section-4 {
+        display: none !important;
+    }
+
+    .section-3 {
+        display: none !important;
+    }
+
+    .section-2 {
+        display: none !important;
+    }
+
+
+
+
+
+
+
+
+}

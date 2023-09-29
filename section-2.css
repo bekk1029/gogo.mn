@@ -1,3 +1,9 @@
+:root {
+    --hover-color: #407ce8;
+    --scale-color: rgba(0, 0, 0, 0.3);
+    --before-after-color: rgba(0, 0, 0, 0.1);
+}
+
 .story_line {
     display: flex;
     flex-direction: column;
@@ -160,6 +166,57 @@
     flex-basis: 0;
 }
 
+.all {
+    position: relative;
+}
+
+.daily_news {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex-grow: 2;
+    flex-basis: 0;
+}
+
+.daily_news1,
+.daily_news2,
+.daily_news3,
+.daily_news4,
+.daily_news5,
+.daily_news6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.day_btn:has(#btn1:checked)+.all .daily_news1,
+.day_btn:has(#btn2:checked)+.all .daily_news2,
+.day_btn:has(#btn3:checked)+.all .daily_news3,
+.day_btn:has(#btn4:checked)+.all .daily_news4,
+.day_btn:has(#btn5:checked)+.all .daily_news5,
+.day_btn:has(#btn6:checked)+.all .daily_news6 {
+    opacity: 1;
+}
+
+
+
+/* #btn1:checked~.daily_news {
+    display: block;
+}
+
+#btn2:checked~.daily_news2 {
+    display: block;
+    opacity: 1;
+}
+
+#btn2:checked~.daily_news1 {
+    display: none;
+    opacity: 0;
+} */
+
+
+
 
 .news {
     display: flex;
@@ -284,7 +341,7 @@
 
 .zoom:hover>img {
     transform: scale(1.05);
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--scale-color);
     border-radius: 5px;
 }
 
@@ -296,7 +353,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--before-after-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -397,23 +454,13 @@
 
 }
 
-.date:hover .date_t {
-    color: #407ce8;
-}
 
-.date:hover,
-.date.date:active {
-    color: #407ce8;
-}
-
-.date:hover button {
-    background-color: #407ce8;
-}
 
 .daylight {
     display: flex;
     align-items: center;
     gap: 10px;
+    position: relative;
 
 }
 
@@ -421,6 +468,10 @@
     font-size: 1.1rem;
     color: #cac4c4;
 
+}
+
+.daylight .date_t {
+    color: var(--hover-color);
 }
 
 .daylight img {
@@ -444,7 +495,7 @@
     position: relative;
 }
 
-#btn {
+#btn1 {
     position: absolute;
     top: -30px;
     left: 0px;
@@ -454,13 +505,44 @@
     opacity: 0;
 }
 
-#btn:checked+.date button {
-    background-color: #407ce8;
+#btn1,
+#btn2,
+#btn3,
+#btn4,
+#btn5,
+#btn6 {
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    width: 100px;
+    height: 65px;
+    z-index: 1;
+    opacity: 0;
 }
 
-#btn:checked+.date {
-    color: #407ce8;
+.daylight>.t_btn {
+    color: var(--hover-color);
 }
+
+
+#btn1:checked+.date button,
+#btn2:checked+.date button,
+#btn3:checked+.date button,
+#btn4:checked+.date button,
+#btn5:checked+.date button,
+#btn6:checked+.date button {
+    background-color: var(--hover-color);
+}
+
+#btn1:checked+.date,
+#btn2:checked+.date,
+#btn3:checked+.date,
+#btn4:checked+.date,
+#btn5:checked+.date,
+#btn6:checked+.date {
+    color: var(--hover-color);
+}
+
 
 
 
@@ -472,6 +554,15 @@
     transition: all .4s ease-in-out;
     cursor: pointer;
     border: none;
+
+}
+
+.date_btn>div:hover .date>.date_t {
+    color: var(--hover-color);
+}
+
+.date_btn>div:hover .date>button {
+    background-color: var(--hover-color);
 
 }
 
@@ -488,7 +579,7 @@
 
 .date:hover .click_date_btn {
     color: #fff;
-    background: #407ce8;
+    background: var(--hover-color);
 }
 
 #scales {

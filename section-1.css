@@ -1,3 +1,9 @@
+:root {
+    --hover-color: #407ce8;
+    --scale-color: rgba(0, 0, 0, 0.3);
+    --before-after-color: rgba(0, 0, 0, 0.1);
+}
+
 main {
     background: #f0eeee;
 }
