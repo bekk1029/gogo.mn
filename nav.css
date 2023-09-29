@@ -196,6 +196,12 @@ img {
 
 @media only screen and (max-width: 992px) {
 
+    .container {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     body {
         display: flex;
         flex-direction: column;
@@ -268,6 +274,146 @@ img {
         background: var(--hover-color);
     }
 
+    .third-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-btn {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position: relative;
+    }
+
+    .main-btn>div {
+        position: relative;
+    }
+
+    #huge-btn1,
+    #huge-btn2,
+    #huge-btn3 {
+        position: absolute;
+        width: 100%;
+        height: 30px;
+        opacity: 0;
+    }
+
+    #huge-btn1:checked+.huge-btn,
+    #huge-btn2:checked+.huge-btn,
+    #huge-btn3:checked+.huge-btn {
+        background: var(--hover-color);
+
+    }
+
+    .third-mobile:has(#huge-btn1:checked)+.cards {
+        display: none;
+    }
+
+
+    .huge-btn {
+        height: 30px;
+        padding: 7px 0px;
+        color: #fff;
+        background-color: #212121;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .huge {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 15px;
+    }
+
+    .huge img {
+        display: block;
+        width: 15px;
+    }
+
+    .huge h2 {
+        font-size: 15px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        gap: 5px;
+
+
+    }
+
+    .card .img {
+        width: 100%;
+        position: relative;
+        padding-top: 46%;
+        overflow: hidden;
+        height: fit-content;
+        flex-basis: 0;
+        border-radius: 8px;
+
+    }
+
+
+
+    .img img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 8px;
+        display: block;
+        object-fit: cover;
+        transition: all .2s ease-in-out;
+
+    }
+
+
+    .img:hover img {
+        transform: scale(1.05);
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+
+
+    .img::before,
+    .slide_img::before {
+        content: 'Унших →';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 20px;
+        opacity: 0;
+        z-index: 2;
+        border-radius: 5px;
+    }
+
+
+    .img:hover::before,
+    .slide_img:hover::before {
+        opacity: 1;
+    }
+
+
 
 
 
@@ -293,9 +439,11 @@ img {
         display: none !important;
     }
 
-    .cards {
+    /* .cards {
         display: none !important;
-    }
+    } */
+
+
 
     .section-4 {
         display: none !important;
