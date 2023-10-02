@@ -306,9 +306,9 @@ main {
 
 @media only screen and (max-width: 992px) {
 
-    .container {
-        margin: 0;
-        padding: 0;
+    .last-container {
+        margin: auto;
+        padding: 0px 30px !important;
         box-sizing: border-box;
     }
 
@@ -350,11 +350,21 @@ main {
 
     .main_mobile {
         display: flex;
-        flex-direction: column;
         border: 1px solid green;
         width: 100%;
         position: relative;
+        color: #fff;
     }
+
+    .main-mobile2,
+    .main-mobile3,
+    .main-mobile4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+
 
     .main_mobile img {
         display: block;
@@ -372,16 +382,21 @@ main {
     }
 
     .mobile-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: 8px;
+        height: 10px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 1px;
+        gap: 2px;
+        z-index: 3;
     }
 
-    .m-btn {
+    .mobile-btn>.m-btn {
         border-radius: 1px;
-        background: var(--hover-color);
+        background: rgba(0, 0, 0, 0.6);
+        position: relative;
     }
 
     .third-mobile {
@@ -394,7 +409,110 @@ main {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        position: relative;
     }
+
+    .main-mobile1,
+    .main-mobile2,
+    .main-mobile3,
+    .main-mobile4 {
+        width: 100%;
+    }
+
+    .main-mobile1 img,
+    .main-mobile2 img,
+    .main-mobile3 img,
+    .main-mobile4 img {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+
+    .main-btn>div {
+        position: relative;
+    }
+
+    #mobile1,
+    #mobile2,
+    #mobile3,
+    #mobile4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .mobile-btn:has(#mobile1:checked) .m-btn1,
+    .mobile-btn:has(#mobile2:checked) .m-btn2,
+    .mobile-btn:has(#mobile3:checked) .m-btn3,
+    .mobile-btn:has(#mobile4:checked) .m-btn4 {
+        background-color: #407ce8;
+    }
+
+    .main_mobile:has(#mobile1:checked) .main-mobile1,
+    .main_mobile:has(#mobile2:checked) .main-mobile2,
+    .main_mobile:has(#mobile3:checked) .main-mobile3,
+    .main_mobile:has(#mobile4:checked) .main-mobile4 {
+        opacity: 1;
+    }
+
+    .new-mobile-section {
+        display: none;
+    }
+
+    .trend-mobile-section {
+        display: none;
+    }
+
+
+    #huge-btn1,
+    #huge-btn2,
+    #huge-btn3 {
+        position: absolute;
+        width: 100%;
+        height: 30px;
+        opacity: 0;
+    }
+
+    #huge-btn1:checked+.huge-btn,
+    #huge-btn2:checked+.huge-btn,
+    #huge-btn3:checked+.huge-btn {
+        background: var(--hover-color);
+
+    }
+
+    .main-btn:has(#huge-btn2:checked)+.last-container .new-mobile-section {
+        display: block;
+    }
+
+    .main-btn:has(#huge-btn2:checked)+.last-container .third-mobile {
+        display: none;
+    }
+
+    .main-btn:has(#huge-btn2:checked)+.last-container .trend-mobile-section {
+        display: none;
+    }
+
+
+
+    .main-btn:has(#huge-btn3:checked)+.last-container .trend-mobile-section {
+        display: block;
+    }
+
+    .main-btn:has(#huge-btn3:checked)+.last-container .third-mobile {
+        display: none;
+    }
+
+    .main-btn:has(#huge-btn3:checked)+.last-container .new-mobile-section {
+        display: none;
+    }
+
 
     .huge-btn {
         height: 30px;
@@ -497,52 +615,36 @@ main {
         opacity: 1;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .feature-article {
-        display: none !important;
+    .other {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f8f8f8;
+        border: 1px solid #f2f2f2;
+        text-align: center;
+        padding: 20px;
+        border-radius: 8px;
     }
 
-    /* .cards {
-        display: none !important;
-    } */
-
-
-
-    .section-4 {
-        display: none !important;
+    .other img {
+        display: block;
+        align-items: center;
+        width: 25px;
     }
 
-    .section-3 {
-        display: none !important;
-    }
-
-    .section-2 {
-        display: none !important;
+    .other a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        color: #000;
     }
 
 
-
+    .container {
+        display: none !important;
+    }
 
 
 
