@@ -16,10 +16,14 @@
 }
 
 .footer_nav ul li {
+    border: 1px soldi red;
     display: flex;
     align-items: center;
     white-space: nowrap;
     gap: 10px;
+}   
+.footer_nav ul li a:hover  {
+    color: #1365f2;
 }
 
 .footer_nav ul li>img {

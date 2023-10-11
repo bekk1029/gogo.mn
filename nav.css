@@ -66,9 +66,6 @@ img {
     z-index: 1;
 }
 
-
-
-
 .has-child:hover .dropdown-content {
     display: block;
 }
@@ -197,6 +194,16 @@ img {
 .header-right-item__value {
     text-align: right;
 }
+@media only screen and (max-width: 1200px) {
+    .menu-wrap{
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .menu-wrap{
+        display: none !important;
+    }
+}
 
 @media only screen and (max-width: 992px) {
 
@@ -240,6 +247,8 @@ img {
         top: 0;
         right: 0;
         z-index: 1;
+        display: block !important;
+        margin-bottom: 80px !important;
     }
 
     .menu-wrap .toggler {
@@ -254,7 +263,6 @@ img {
     }
 
     .menu-wrap .hamburger {
-        border: 2px solid green;
         position: absolute;
         top: 5px;
         right: 0;
@@ -344,17 +352,16 @@ img {
         background-color: #fff;
         z-index: 1;
     }
-
-    .menu-wrap>.last-con {
+    .menu-wrap .last-con {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 50px;
     }
 
     .menu-wrap header {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
+        display: flex !important;
+        justify-content: flex-start;
         background-color: #108bf0;
     }
 
@@ -364,13 +371,103 @@ img {
         gap: 20px;
     }
 
-    .search {
+    .menu-wrap .header-right {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .menu-wrap .header-right-item {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 5px 10px;
+    }
+
+    .menu-wrap .header-left-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .menu-wrap .header-left-nav li .dropbtn {
+        font-size: 15px;
+        color: #212121;
+        background: none;
+    }
+
+    .menu-wrap .jumper-logo {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .menu-wrap .jumper-logo div {
+        border: 1px solid #212121;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 15px ;
+    }
+    .menu-wrap .footer_nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .menu-wrap .footer_nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-wrap .footer_nav ul li a{
+        font-size: 15px;
+    }
+
+    .menu-wrap .footer_nav ul li:hover .menu-wrap .footer_nav ul li a {
+        color: #108bf0;
+    }
+
+
+   
+
+    .example {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         border: 1px solid #3333;
         border-radius: 8px;
-        padding: 8px;
+        margin-top: 20px;
     }
+
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: none;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+      }
+      
+      form.example button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        color: #1a1a1a;
+        background: #f1f1f1;
+        font-size: 17px;
+        border:none;
+        border-left: none;
+        cursor: pointer;
+      }
+      
+      form.example button:hover {
+        background: #0b7dda;
+      }
+      
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
 
 
 

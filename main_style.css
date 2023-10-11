@@ -30,6 +30,10 @@ a {
     display: none;
 }
 
+.menu-wrap{
+    display: none;
+}
+
 
 
 
@@ -65,6 +69,16 @@ a {
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .menu-wrap{
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .menu-wrap{
+        display: none !important;
+    }
+}
 @media only screen and (min-width: 1600px) {
     .container {
         width: 1100px;
